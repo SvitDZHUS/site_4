@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	box-sizing: border-box;
+    transition-duration: 0.70s;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins";
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	font-family: "Poppins";
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 5px;
+}
+    
+.link{
+    display: block;
+    padding: 20px 0px;
+    text-align: center;
+    
+    font-weight: 600;
+    font-size: 18px;
+    color: #083C6E;
+    text-transform: uppercase;
+}
+
+.menu-link{
+    width: 195px;
+}
+
+.link:active, .link:hover{
+    color: #fff;
+    background-color: #083C6E;
+}
+
+
+
+.hero {
+    position: relative;
+    padding-top: 200px;
+    background-image: url("../img/background/hero Image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+    margin-bottom: 150px;
+}
+
+.hero-container {
+
+}
+
+.hero-content {
+    max-width: 450px;
+
+} 
+
+.hero-content *{
+    margin: 0;
+}
+
+.hero-heading {
+    font-weight: 600;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+
+.hero-descr {
+    max-width: 450px;
+}
+
+.descr {
+    font-size: 18px;
+    color: #B1B6CA;
+    margin-bottom: 25px;
+}
+
+:root {
+    --input-color: #99A3BA;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+
+    --input-border-focus: #275EFE;
+
+    --group-color: var(--input-color);
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #678EFE;
+}
+
+.hero-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    -webkit-appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+}
+
+.hero-field::placeholder {
+    color: var(--input-placeholder);
+}
+
+.hero-field:focus {
+    outline: none;
+    border-color: #083C6E;
+}
+
+.hero-input {
+    position: relative;
+    display: flex;
+    width: 435px;
+}
+
+.hero-input span, .hero-field {
+    white-space: nowrap;
+    display: block;
+}
+
+.hero-field:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.hero-field:first-child {
+   
+}
+
+.hero-field:last-child {
+    
+}
+
+.hero-field:not(:first-child) {
+    margin-left: -1px;
+}
+
+.hero-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-input span {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 25px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--group-color);
+    background: var(--group-background);
+    border: 1px solid var(--group-border);
+    transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.hero-input:focus-within span{
+    color: #fff;
+    background: #083C6E;
+    border-color: #083C6E;
+}
+
+
+
+
+.kits{
+    background-image: url("../img/background/Dot Design.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 5% 40%;
+    margin-bottom: 140px;
+}
+
+.kits-container {
+    padding: 20px;
+    max-width: 1150px;
+    
+}
+
+
+.title {
+    font-weight: 500;
+    font-size: 52px;
+    text-align: center;
+    margin: 0;
+}
+
+.kits-title {
+    max-width: 500px;
+    margin: 0 auto 100px;
+}
+
+.title{
+    border-bottom: 5px solid #fff;
+    border-top: 5px solid #fff;
+}
+
+.title:hover{
+    border-bottom: 5px solid #083C6E;
+    border-top: 5px solid #083C6E;
+    
+}
+
+.kits-gallery {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.list-reset {
+}
+
+.kits-card {
+   max-width: 357px;
+   position: relative;
+   margin-right: 10px;
+}
+
+.kits-card:last-child{
+    margin-right: 0;
+} 
+
+.kits-card--sale::before{
+    content: "SALE";
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 80px;
+    height: 32px;
+    background-color: #083C6E;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.kits-info {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #083C6E;
+    padding: 0 12px;
+    opacity: 0.75;
+}
+
+.kits-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.kits-btn {
+    width: 96px;
+    height: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kits-btn:hover {
+    background-color: #fff;
+    color: #083C6E;
+}
+
+.furniture {
+    background-image: url("../img/background/Dot Design.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    margin-bottom: 180px;
+}
+
+.furniture-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.furniture-content {
+    max-width: 450px;
+}
+
+.slogan {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.furniture-slogan {
+    margin-bottom: 20px;
+}
+
+.furniture-title {
+    text-align: left;
+    width: 240px;
+    margin-bottom: 50px;
+}
+
+.furniture-descr {
+    margin-bottom: 50px;
+}
+
+.furniture-link, .experience-link {
+    width: 220px;
+    color: #fff;
+    background-color: #083C6E;
+    border: 3px solid #083C6E;
+}
+
+.furniture-link:hover, .furniture-link:active, .experience-link:hover, .experience-link:active{
+    color: #083C6E;
+    background-color: #fff;
+}
+
+.furniture-img {
+}
+
+.furniture-img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.panoramic{
+    opacity: 0.8;
+    margin-bottom: 160px;
+}
+
+.panoramic-img{
+    width: 100%;
+}
+
+
+.benefits {
+    margin-bottom: 140px;
+} 
+
+.benefits-container {
+}
+
+
+.benefits-slogan {
+    margin-bottom: 20px;
+}
+
+
+.benefits-title {
+    font-size: 38px;
+    max-width: 440px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-item {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+.benefits-icon{
+}
+
+.benefits-icon:hover{
+    transform: translate(0px, -40px);
+    
+}
+
+.benefits-content {
+}
+
+.benefits-caption {
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.benefits-descr {
+    margin: 0;
+}
+
+
+.experience {
+    background-image: url("../img/background/Dot Design.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    margin-bottom: 180px;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.experience-img--circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.experience-img--angle {
+    position: absolute;
+    top: 0;
+    left: 0;
+}   
+
+.experience-content {
+    max-width: 445px;
+}
+
+.experience-slogan {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-size: 38px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.experience-descr {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+
+.experience-link {
+}
+
+.link {
+}
+
+
+
+.support {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.support-container {
+    max-width: 1110px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -100px;
+    width: 70%;
+    padding-top: 30px;
+}
+
+
+.support-title {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 50px;
+
+}
+
+.support-descr {
+    max-width: 585px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.support-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    -webkit-appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+}
+
+.support-field::placeholder {
+    color: var(--input-placeholder);
+}
+
+.support-field:focus {
+    outline: none;
+    border-color: #083C6E;
+}
+
+.support-input {
+    position: relative;
+    display: flex;
+    width: 585px;
+    margin-bottom: 40px;
+}
+
+.support-input span, .support-field {
+    white-space: nowrap;
+    display: block;
+}
+
+.support-field:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+
+.support-field:not(:first-child) {
+    margin-left: -1px;
+}
+
+.suppoer-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.support-input span {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 25px;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--group-color);
+    background: var(--group-background);
+    border: 1px solid var(--group-border);
+    transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.support-input:focus-within span{
+    color: #fff;
+    background: #083C6E;
+    border-color: #083C6E;
+}
+
+.footer {
+   
+    background-color: #152242;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-headline {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.footer-item {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer-item:last-child{
+    margin-bottom: 0;
+}
+
+.help {
+}
+
+.contacts {
+    margin-bottom: 20px;
+}
+.footer-socials {
+}
+
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 992px) {
+    .hero{
+        margin-bottom: 75px;
+    }
+    .kits{
+        margin-bottom: 70px;
+    }
+    .furniture{
+        margin-bottom: 90px;
+    }
+    .panoramic{
+        margin-bottom: 80px;
+    }
+    .benefits{
+        margin-bottom: 70px;
+    }
+    .experience-images{
+        margin-right: 30px;
+    }
+    .footer{
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 576px){
+    
+}
+
+@media (max-width: 375px){
+    .kits{
+        padding-right: 20px;
+    }
+    
+}
+
